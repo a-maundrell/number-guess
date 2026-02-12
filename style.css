@@ -31,6 +31,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 3rem;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .left {
@@ -116,4 +119,55 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+
+/* RESPONSIVE ---------------------------------------- */
+
+@media (width <= 1110px) {
+  .guess {
+    margin-top: 6rem;
+  }
+
+  .right p {
+    text-align: center;
+  }
+
+  .label-score {
+    margin-top: -5rem;
+  }
+}
+
+@media (width <= 640px) {
+  h1 {
+    margin-top: 3rem;
+  }
+
+  .number {
+    bottom: -10rem;
+  }
+
+  .guess {
+    margin-top: 16rem;
+  }
+}
+
+@media (width <= 500px) {
+  .again {
+    font-size: 1.25rem;
+  }
+
+  .between {
+    font-size: 1.25rem;
+  }
+}
+
+@media (width <= 400px) {
+  .again {
+    font-size: 1rem;
+  }
+
+  .between {
+    font-size: 1rem;
+  }
 }
